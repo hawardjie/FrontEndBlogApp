@@ -160,7 +160,7 @@ function BlogSection(props) {
                                 <Comment>
                                     <p>{commentItem.content}</p>   {/* comment content */}
                                     <CommentFooter>
-                                        Posted by {commentItem.username} on {timestampToDate(commentItem.createdOn)}
+                                        Commented by {commentItem.username} on {timestampToDate(commentItem.createdOn)}
                                         {
                                             (localStorage.getItem('registeredUsername') !== commentItem.username)
                                             ? null   /* Do not show the delete icon if comment was not created by current user */
