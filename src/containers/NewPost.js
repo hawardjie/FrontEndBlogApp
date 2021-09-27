@@ -56,6 +56,12 @@ function NewPost(props) {
         // Cleanup the states
         setTitleInput("")
         setContentInput("")
+        setState({
+            imageFiles: []
+        })
+
+        // Redirect to Homepage
+        props.history.push("/")
     }
 
     return (
